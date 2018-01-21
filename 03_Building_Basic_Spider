@@ -1,0 +1,11 @@
+#Making Simple Spider
+1. Type scrapy
+quotes.to.scrap
+#Starting a project
+Change Directory to desktop
+scrapy startprojects quotes_spider
+By default scrapy.cfg is generated
+and a folder will be there
+scarapy genspinder quotes[Name_Of_Spider] http://quotes.toscape.com
+scrapy list #To get List of Scrapy
+ 
