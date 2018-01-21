@@ -65,3 +65,14 @@ Check the result.
 
 
 Go ahead and try these options, and if you have questions, please send them to the Q&A section - I will be more than happy to help you.
+
+
+
+from scrapy.selector import Selector
+sel = selector(text=html_doc)
+sel.extract()
+sel.xpath('/html/head/title')
+sel.xpath('/html/head/title').extract()
+sel.xpath('//text()').extract()
+sel.xpath('//p')[0].extract()
+
