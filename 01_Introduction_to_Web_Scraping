@@ -1,0 +1,15 @@
+Install Scrapy
+pip install scrapy
+
+Other Scraping tools
+urllib2 :- By default present in python
+requests 
+Beautiful Soup is a very beautiful tool
+lxml :- Simalar to beautiful Soup
+Offical documentation is not user friendly
+Selenium :- Tool for Web testing
+It is very user friendly
+
+Scrapy module is best for web scraping
+scrapy is synchronous
+ 
