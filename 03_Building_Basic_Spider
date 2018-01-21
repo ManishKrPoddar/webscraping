@@ -27,3 +27,14 @@ response.xpath('//*[@class="tag-item"]/a')
 response.xpath('//*[@class="tag-item"]/a/text()')
 response.xpath('//*[@class="tag-item"]/a/text()').extract()
 
+#Part 3
+Go to setting.py
+Change robot.txt = FALSE
+
+Make following Changes to parse
+
+h1_tag = response.xpath('//h1/a/text()').extract_first()
+tags = response.xpath('//*[@class="tag-item"]/a/text()').extract()
+
+yield {'H1 Tag': h1_tag, 'Tags': tags}
+
