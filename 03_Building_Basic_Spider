@@ -6,6 +6,24 @@ Change Directory to desktop
 scrapy startprojects quotes_spider
 By default scrapy.cfg is generated
 and a folder will be there
-scarapy genspinder quotes[Name_Of_Spider] http://quotes.toscape.com
+scarapy genspinder quotes[Name_Of_Spider] http://quotes.toscrape.com/
 scrapy list #To get List of Scrapy
- 
+
+#PART2
+scrapy shell #Take you to ipython
+fetch("https://quotes.toscrape.com/")
+response #Getting the response
+response.css('h1')
+response.css('h1::text')
+response.xpath('//h1')
+response.xpath('//h1/a')
+response.xpath('//h1/a/text()')
+response.xpath('//h1/a/text()').extract()
+response.xpath('//h1/a/text()').extract_first()
+response.xpath('//*[@class="tag"]')
+response.xpath('//*[@class="tag-item"]')
+len(response.xpath('//*[@class="tag-item"]'))
+response.xpath('//*[@class="tag-item"]/a')
+response.xpath('//*[@class="tag-item"]/a/text()')
+response.xpath('//*[@class="tag-item"]/a/text()').extract()
+
