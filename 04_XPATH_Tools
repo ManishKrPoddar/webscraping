@@ -1,0 +1,67 @@
+Here are some easy methods to get XPath.
+
+
+
+1- Google Chrome
+Open the web page in Google Chrome.
+Select the text portion you want to extract.
+Right-click, and select "Inspect".
+Select the HTML code you need, and select "Copy" and then "Copy XPath".
+Paste the XPath to your code, test, and edit it, if necessary.
+Note that this method copy the "id" but you can change it to the "class" of the same portion if that will work better.
+
+
+
+
+
+
+2- XPath Helper (Chrome Extension)
+Install XPath Helper Chrome extension (link). Restart Chrome.
+Open a new tab and navigate to any webpage.
+To open the XPath Helper console, click the XPath Helper button in the toolbar or press Ctrl-Shift-X (or Command-Shift-X on OS X).
+Move your mouse over the portion you want to extract, and hold down Shift. The query box will show the XPath query for the element below the mouse pointer.
+Note that it extracts the full XPath which you can use as is, or you can delete the first part and replace it with an extra slash.
+You can edit the XPath query directly in the console. The results box will immediately reflect your changes.
+
+
+
+
+3 - FireBug (Firefox Extension)
+Install FireBug Firefox extension (link). Restart Firefox. (Note: It is deprecated, but still useful for finding XPath)
+Select the text portion you want to extract.
+Right-click, and select "Inspect in Element with FireBug".
+Select the HTML code you need, and select "Copy XPath".
+Paste the XPath to your code, test, and edit it, if necessary.
+
+
+
+
+
+4 - FirePath (Firefox Extension)
+You can use FirePath, which is a Firebug extension that adds a development tool to generate XPath. Sometimes, it is easier and more accurate to use it.
+
+Install FireBug Firefox extension (link); it is a perquisite to install FirePath.
+Install FirePath Firefox extension (link). Restart FireFox.
+Select the text portion you want to extract.
+Right-click, and select "Inspect in FirePath".
+The XPath is shown in the dedicated box.
+Copy the XPath and paste it to your code, test, and edit it, if necessary.
+
+
+
+
+
+
+
+
+5 - XPath Tester
+It is to write your XPath strings and try it.
+
+Open XPath Tester (link).
+Copy paste the HTML source code into the first field "XML Input".
+Type your XPath in the field "XPath expression".
+Click the button "TEST XPATH".
+Check the result.
+
+
+Go ahead and try these options, and if you have questions, please send them to the Q&A section - I will be more than happy to help you.
