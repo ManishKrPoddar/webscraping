@@ -1,0 +1,15 @@
+scrapy shell http://quotes.toscrape.com
+quotes = response.xpath('//*[@class="quote"]')
+quote = quotes[0]
+quote.extract()
+quote.xpath()
+quote.xpath('//a')
+quote.xpath('.//a')
+quote.xpath('.//*[@class="text"]/text()').extract_first()
+quote.xpath('.//*[@class="author"]/text()').extract_first()
+for quote in quotes:
+	text = quote.xpath('.//*[@class="text"]/text()').extract_first()
+	author = quote.xpath('.//*[@class="author"]/text()').extract_first()
+	tags = quote.xpath('.//*[@itemprop="keywords"]/@content').extract_first()
+
+    
