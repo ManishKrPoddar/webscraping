@@ -28,3 +28,7 @@ class BooksSpider(CrawlSpider):
 
     def parse_page(self, response):
         pass
+
+
+## Note
+Inside LinkExtractor you can mention what you want to crawl using parameter allowed
