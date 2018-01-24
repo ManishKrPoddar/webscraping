@@ -1,0 +1,2 @@
+#Scrapy Close Functions
+scrapy crawl books -o result.csv
