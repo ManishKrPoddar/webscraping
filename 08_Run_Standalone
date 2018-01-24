@@ -1,0 +1,3 @@
+# Copy the spider code called quote.py on desktop
+then run
+scrapy runspider ***.py
