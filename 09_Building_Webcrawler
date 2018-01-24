@@ -1,0 +1,30 @@
+# Crawl a book website
+scarapy startproject books_crawler
+scrapy genspider books http://books.toscrape.com/
+scrapy shell "http://books.toscrape.com"
+go to books.py and remove www from start_url
+remove default spider 
+
+from scrapy.spider import CrawlSpider,Rule
+
+Crawlspider had rule variable
+
+rules = (Rule(LinkExtractor(),callback='parse_page'),follow = 'True'))
+
+******************************************************Building-Final-code****************************************************
+# -*- coding: utf-8 -*-
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors import LinkExtractor
+
+
+class BooksSpider(CrawlSpider):
+    name = "books"
+    allowed_domains = ["books.toscrape.com"]
+    start_urls = (
+        'http://books.toscrape.com/',
+    )
+
+    rules = (Rule(LinkExtractor(), callback='parse_page', follow=True),)
+
+    def parse_page(self, response):
+        pass
